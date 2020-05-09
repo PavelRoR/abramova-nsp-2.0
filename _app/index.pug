@@ -1,0 +1,33 @@
+-var path = ''
+-var head_url = 'https://abramova.mymv.ru/new-system-psychology-webinar/';
+-var head_title = '«Новая системная психология-2.0»';
+-var head_description = 'З-дневный онлайн-мастер-класс Жанны Абрамовой';
+//- -var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var scripts = path+'js/scripts.min.js'
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/main/1.main.pug
+		include pug/main/2.about.pug
+		include pug/main/3.feats.pug
+		include pug/main/4.for.pug
+		include pug/main/5.plan.pug
+		include pug/main/6.useful.pug
+		include pug/main/7.program.pug
+		include pug/main/8.author.pug
+		include pug/main/9.revs.pug
+		include pug/main/10.last.pug
+		include pug/main/11.footer.pug
+		include pug/main/12.modal.pug
+		include pug/main/13.politics.pug
+		include pug/scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
