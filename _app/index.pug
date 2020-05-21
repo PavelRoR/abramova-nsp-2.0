@@ -7,6 +7,18 @@
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
 -var scripts = path+'js/scripts.min.js'
+-var action = '';
+-var group = '';
+-var formId = '';
+-var formVc = '';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin b(cl,href,p,target,id)
+	a.button.button-up(class=cl href=href target=target id=id)=p
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -25,9 +37,8 @@ html(lang="ru")
 		include pug/main/8.author.pug
 		include pug/main/9.revs.pug
 		include pug/main/10.last.pug
-		include pug/main/11.footer.pug
-		include pug/main/12.modal.pug
-		include pug/main/13.politics.pug
-		include pug/scripts
+		include pug/base/footer.pug
+		include pug/main/11.modal.pug
+		include pug/base/scripts
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
