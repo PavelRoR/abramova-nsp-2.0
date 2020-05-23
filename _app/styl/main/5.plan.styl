@@ -1,0 +1,51 @@
+#plan
+	padding 0 0 90px
+.general-title-plan
+	small
+		color #000
+		font-size: 18px
+		font-family: G
+		font-weight: normal
+		display block
+		text-transform none
+		margin-top: 20px
+.day
+	width 100%
+	max-width 1170px
+	margin 0 auto 50px
+	border-radius: 20px
+	box-shadow: 0 1px 26px 4px rgba(#000,.3)
+	padding 30px 55% 30px 30px
+	background-repeat no-repeat
+	background-position: right center
+	background-size 585px auto
+	&-1
+		background-image url(../img/images/day-1.png)
+	&-2
+		background-image url(../img/images/day-2.png)
+	&-3
+		background-image url(../img/images/day-3.png)
+	&-title
+		color #b05420
+		font-size: 25px
+		font-family: GBk
+		font-weight: 900
+		text-transform uppercase
+		small
+			display block
+			font-size: 20px
+			font-family: G
+			font-weight: normal
+			text-transform none
+			color #000
+	&-list
+		margin 20px 0
+		list-style: none
+	&-bonus
+			font-size: 16px
+			font-family: G
+			font-weight: normal
+			color #6f6f6f
+		span
+			@extend .day-title
+			display block

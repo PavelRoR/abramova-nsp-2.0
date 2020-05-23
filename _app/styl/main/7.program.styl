@@ -1,0 +1,52 @@
+#program
+	padding 200px 0 90px
+.program-container
+	border-radius: 60px;
+	box-shadow: 0px 1px 44.16px 1.84px rgba(0, 0, 0, 0.3);
+	width 100%
+	max-width: 938px;
+	margin 0 auto 50px
+	position relative
+	padding 90px 120px
+	&:after
+		content ''
+		display block
+		position absolute
+		width 265px
+		height 266px
+		background-image url(../img/images/books.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		top -130px
+		right: -130px
+.program-table
+	// display table
+	// width 100%
+	&-row
+		overflow hidden
+		border-bottom: 1px solid #eee
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+			border-bottom: none
+	&-cell
+		display inline-block
+		&-head-title
+			font-family: GBd
+			font-weight: bold
+.program-table-cell
+	padding-bottom: 10px
+	float left
+	&:first-child
+		width 12%
+	&:nth-child(2)
+		width 70%
+	&:last-child
+		width 15%
+		float: right
+// .program-cell-head
+// 	margin-bottom: 30px
+.program-cell-head:first-child
+	display inline-block
+	width 60%

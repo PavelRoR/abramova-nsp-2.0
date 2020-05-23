@@ -1,0 +1,71 @@
+#benefits
+	padding 90px 0
+	background-color: #120F0E
+	background-image url(../img/backs/benefits.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	&:before
+		content ''
+		display block
+		width 100%
+		max-width 1920px
+		height 512px
+		background-image url(../img/images/clouds-2.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		position: absolute
+		margin 0 auto
+		left 0
+		right 0
+		bottom: -285px
+		z-index 30
+.benefit
+	margin-bottom: 40px;
+	// overflow: hidden;
+	display: flex
+	width: 100%;
+	position relative
+	z-index 10
+	&-title
+		font-size: 59px;
+		font-family: GBk
+		font-weight: 900;
+		padding-right: 10px;
+		color: #b05420
+		display: table-cell;
+		vertical-align: middle;
+		position relative
+		line-height: 52px
+		&:before
+			content ''
+			display block
+			position absolute
+			width 65px
+			height 3px
+			background-color: #910B6F
+			left 0
+			top 52px
+		&:after
+			content ''
+			display block
+			position absolute
+			width 3px
+			height 67px
+			background-color: #910B6F
+			right 0
+			top: 0
+	&-text
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 15px
+		font-size: 20px
+		color #fff
+.benefits-img
+	position absolute
+	right: -60px
+	top -30px
+	width 650px
+	z-index 0

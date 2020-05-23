@@ -4,8 +4,9 @@ section#main
 		.row
 			.col-md-8.col-sm-8
 				h1.main-title Новая системная психология-2.0
-				h2.main-subtitle Комплексная программа профессиональной переподготовки начинающих и практикующих психологов по специальности «Специалист системной психологии» с выдачей диплома государственного образца
-				+b('','#Modal','Записаться на презентацию')
+					small Комплексная программа профессиональной переподготовки начинающих и практикующих психологов по специальности «Специалист системной психологии» с выдачей диплома государственного образца
+				h2.main-subtitle Станьте психологом и научитесь работать с бессознательными ресурсами личности!
+				+b('button-main','#Modal','Записаться на презентацию')
 				p.main-info Даты проведения: 
 					span с 5 по 7 июня, 19:00 (Мск)
 				p.main-info Автор курса: 
@@ -22,7 +23,9 @@ section#form
 						iframe(src="https://youtube.com/embed/?modestbranding=1&autoplay=1&mute=1" allowfullscreen)
 			.col-md-5.col-sm-5
 				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-main
-					h3.form-title.switch-title Регистрируйтесь на онлайн-мастер-класс 
+					h3.form-title.switch-title Регистрируйтесь 
+						br
+						| на онлайн-мастер-класс 
 						span НОВАЯ СИСТЕМНАЯ ПСИХОЛОГИЯ 
 							sup 2.0
 					p.switch-text.hide
