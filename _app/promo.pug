@@ -1,0 +1,34 @@
+-var path = '../'
+-var head_url = 'https://abramova.mymv.ru/new-system-psychology-webinar/promo/';
+-var head_title = 'Подписывайтесь на наш Телеграм-канал и получайте много полезного контента!';
+//- -var head_description = 'З-дневный онлайн-мастер-класс Жанны Абрамовой';
+//- -var head_img = 'img/banner.jpg';
+-var styles = path+'css/promo.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+//- -var scripts = path+'js/scripts.min.js'
+//- -var action = 'https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=';
+//- -var group = '1392';
+//- -var formId = '460';
+//- -var formVc = '436575402';
+-var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin b(cl,href,p,target,id)
+	a.button.button-up(class=cl href=href target=target id=id)=p
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/promo/1.main.pug
+		include pug/base/footer.pug
+		include pug/base/scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
