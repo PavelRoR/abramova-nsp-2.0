@@ -6,12 +6,12 @@ section#revs
 				#text-revs.carousel.slide(data-ride="carousel" data-interval="false")
 					.carousel-inner(role="listbox")
 						.item.active
-							a( href="img/revs/text-1.jpg" data-fancybox="revs")
-								img.text-rev-img( src="img/revs/text-1.jpg" alt="Отзыв 1")
+							a( href=path+"img/revs/text-1.jpg" data-fancybox="revs")
+								img.text-rev-img( src=path+"img/revs/text-1.jpg" alt="Отзыв 1")
 						each n in [2,3,4,5,6,7,8,9,10]
 							.item
-								a( href="img/revs/text-"+n+".jpg" data-fancybox="revs")
-									img.text-rev-img( src="img/revs/text-"+n+".jpg" alt="Отзыв " + n)
+								a( href=path+"img/revs/text-"+n+".jpg" data-fancybox="revs")
+									img.text-rev-img( src=path+"img/revs/text-"+n+".jpg" alt="Отзыв " + n)
 					ol.carousel-indicators.revs-indicators
 						li.active( data-target="#text-revs" data-slide-to="0")
 						each n in [1,2,3,4,5,6,7,8,9]
@@ -23,15 +23,15 @@ section#revs
 				#video-revs.carousel.slide(data-ride="carousel" data-interval="false")
 					.carousel-inner(role="listbox")
 						.item.active
-							.video-wrapper.video-wrapper-revs(data-youtube="gJinNUx_xs4" data-img="img/revs/video-1.jpg")
-								img(src="img/revs/video-1.jpg", alt="Видео отзыв")
-						each n, index in {2: '_NQf21JP2oA',3: 'AZfLn_ZqHyA',4: 'l8vnjIemdSc',5: 'Nbw15zRts_0',6: 'RP1gFyH-Ck4',7: '6y7cLuFNo1g',8: 'LNYbBnTQVR4',9: 'TorP-7Ww548',10: 'HTE3UyKu3qM',11: 'djHCeCR-URc',12: 'nBmH4TOuMJM',13: 'xoKU6J7rNd0',14: 'fgIzELdjupw',15: 'w9XjIDok2Kk'}
+							.video-wrapper.video-wrapper-revs(data-youtube="nLoNlLUlC1U" data-img=path+"img/revs/video-1.jpg")
+								img(src=path+"img/revs/video-1.jpg", alt="Видео отзыв")
+						each n, index in {2: 'AXWKp131Lc4',3: 'QMaZsNzTLBw',5: 'B_NHWneVtJA',6: '23wuzK2PtHI',7: 'bk7BXao164g',8: '5kCyZIfkSp4',9: 'RsbQk2rJH1k',10: '7DeIMDUjejU'}
 							.item
-								.video-wrapper.video-wrapper-revs(data-youtube=n data-img="img/revs/video-"+index+".jpg")
-									img(src="img/revs/video-"+index+".jpg", alt="Видео отзыв " + index)
+								.video-wrapper.video-wrapper-revs(data-youtube=n data-img=path+"img/revs/video-"+index+".jpg")
+									img(src=path+"img/revs/video-"+index+".jpg", alt="Видео отзыв " + index)
 					ol.carousel-indicators.revs-indicators
 						li.active( data-target="#video-revs" data-slide-to="0")
-						each n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+						each n in [1,2,3,5,6,7,8,9]
 							li( data-target="#video-revs" data-slide-to=n)
 					.controls.text-controls
 						a(class="left carousel-control" href="#video-revs" role="button" data-slide="prev") ‹

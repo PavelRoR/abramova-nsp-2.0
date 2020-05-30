@@ -1,6 +1,28 @@
 #author
-	@extend #benefits
-	padding-bottom: 200px
+	padding 90px 0 200px
+	background-color: #120F0E
+	background-image url(../img/backs/benefits.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	position relative
+	&:before
+		content ''
+		display block
+		width 100%
+		max-width 1920px
+		height 512px
+		background-image url(../img/images/clouds-2.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		position: absolute
+		margin 0 auto
+		left 0
+		right 0
+		bottom: -285px
+		z-index 30
 .janna
 	position absolute
 	right 100px
@@ -14,6 +36,9 @@
 		color #fff
 		margin-bottom: 25px
 		padding-left: 45px
+		min-height: 35px;
+		display: flex;
+		align-items: center;
 		&:last-child
 			margin-bottom: 0
 		&:before

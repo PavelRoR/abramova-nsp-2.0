@@ -1,0 +1,69 @@
+#plan
+	padding 90px 0
+	background-color: #120F0E
+	background-image url(../img/backs/benefits.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	&:before
+		content ''
+		display block
+		width 100%
+		max-width 1920px
+		height 512px
+		background-image url(../img/images/clouds-2.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		position: absolute
+		margin 0 auto
+		left 0
+		right 0
+		bottom: -285px
+		z-index 30
+.module
+	width 100%
+	max-width 1170px
+	margin 0 auto 50px
+	border-radius: 20px
+	box-shadow: 0 1px 26px 4px rgba(#000,.3)
+	padding 30px
+	background-repeat no-repeat, no-repeat
+	background-position: center, center
+	background-size cover
+	&-1
+		background-image: linear-gradient(rgba(255,255,255,.95),rgba(255,255,255,.95)),url(../img/images/day-1.png)
+	&-2
+		background-image linear-gradient(rgba(255,255,255,.95),rgba(255,255,255,.95)),url(../img/images/day-2.png)
+	&-3
+		background-image linear-gradient(rgba(255,255,255,.95),rgba(255,255,255,.95)),url(../img/images/day-3.png)
+	&-title
+		color #b05420
+		font-size: 25px
+		font-family: GBk
+		font-weight: 900
+		text-transform uppercase
+	&-text
+		font-size: 20px
+		font-family: GM
+		font-weight: 600
+		text-transform none
+		color #000
+		margin 20px 0 5px
+	&-list
+		li
+			padding-left: 15px
+			position relative
+			list-style: none
+			margin-left: 10px
+			&:before
+				content: ''
+				display block
+				position absolute
+				width 8px
+				height 8px
+				border-radius: 10px
+				background-color: #b05420
+				top 10px
+				left 0

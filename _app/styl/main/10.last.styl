@@ -1,8 +1,30 @@
 #last
-	@extend #benefits
+	padding 90px 0
+	background-color: #120F0E
+	background-image url(../img/backs/benefits.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
 	overflow hidden
 	text-align center
 	color #fff
+	position relative
+	&:before
+		content ''
+		display block
+		width 100%
+		max-width 1920px
+		height 512px
+		background-image url(../img/images/clouds-2.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		position: absolute
+		margin 0 auto
+		left 0
+		right 0
+		bottom: -285px
+		z-index 30
 .last-title
 	font-size: 50px;
 	font-family: GBk

@@ -1,0 +1,71 @@
+-full_1='25 000р.';
+-full_2='65 000р.';
+-full_3='120 000р.';
+
+-link_1='https://shop.mastervision.su/?r=ordering/cart/as1&id=4991&clean=true&lg=ru';
+-link_2='https://shop.mastervision.su/?r=ordering/cart/as1&id=4993&clean=true&lg=ru';
+-link_3='https://shop.mastervision.su/?r=ordering/cart/as1&id=4995&clean=true&lg=ru';
+
+-prepLink_1='https://shop.mastervision.su/?r=ordering/cart/as1&id=4992&clean=true&lg=ru';
+-prepLink_2='https://shop.mastervision.su/?r=ordering/cart/as1&id=4994&clean=true&lg=ru';
+-prepLink_3='https://shop.mastervision.su/?r=ordering/cart/as1&id=4996&clean=true&lg=ru';
+
+section#prices
+	.container
+		+gt('','Выберите свой вариант участия')
+		.packets
+			.row
+				.col-md-4
+					.packet
+						.packet-head
+							h4.packet-head-title Модуль 1
+						.packet-body
+							a.modal-up(href="#Modal-1") подробнее
+						.packet-footer
+							p.cost Стоимость:
+								span=full_1
+							+b('',link_1,'Выбрать','_blank','link-1')
+						.prepayment
+							h4.prepayment-title Акция!!!
+							p.prepayment-text Платите 10 000р., бонусом получаете 
+								span#prepayment-bonus 2 500р. 
+								br
+								| На счет зачисляется 
+								span#prepayment-credited 12 500р.
+							+b('',prepLink_1,'Оплатить ','_blank','prepayment-link-1','10 000р.')
+				.col-md-4
+					.packet
+						.packet-head
+							h4.packet-head-title Модуль 2
+						.packet-body
+							a.modal-up(href="#Modal-2") подробнее
+						.packet-footer
+							p.cost Стоимость:
+								span=full_2
+							+b('',link_2,'Выбрать','_blank','link-2')
+						.prepayment
+							h4.prepayment-title Акция!!!
+							p.prepayment-text Платите 10 000р., бонусом получаете 
+								span#prepayment-bonus 5 000р. 
+								br
+								| На счет зачисляется 
+								span#prepayment-credited 15 000р.
+							+b('',prepLink_2,'Оплатить ','_blank','prepayment-link-2','10 000р.')
+				.col-md-4
+					.packet
+						.packet-head
+							h4.packet-head-title Модуль 3
+						.packet-body
+							a.modal-up(href="#Modal-3") подробнее
+						.packet-footer
+							p.cost Стоимость:
+								span=full_3
+							+b('',link_3,'Выбрать','_blank','link-3')
+						.prepayment
+							h4.prepayment-title Акция!!!
+							p.prepayment-text Платите 10 000р., бонусом получаете 
+								span#prepayment-bonus 10 000р. 
+								br
+								| На счет зачисляется 
+								span#prepayment-credited 20 000р.
+							+b('',prepLink_3,'Оплатить ','_blank','prepayment-link-3','10 000р.')
